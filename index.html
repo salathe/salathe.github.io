@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+  <div class="post">
+    <h3 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+      <small class="page-date">{{ post.date | date_to_string }}</small>
+    </h3>
+
+    
+
+    {{ post.excerpt }}
+  </div>
+  {% endfor %}
+</div>

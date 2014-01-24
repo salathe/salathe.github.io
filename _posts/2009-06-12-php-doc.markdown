@@ -1,0 +1,6 @@
+---
+layout: post
+title: Joined the PHP Documentation Team
+excerpt: Write The F***ing Manual!
+---
+<img src="http://cowburn.info/wp-content/uploads/2009/06/php-med-trans1.png" alt="PHP logo" title="PHP logo" width="95" height="51" class="alignleft size-full wp-image-175" /> This is just a very short update to announce quietly that I recently joined the team of folks working on the <a href="http://php.net/docs" title="PHP Documentation">PHP documentation</a>.  It's another step towards giving a little something back to the PHP community by adding to and updating the constantly evolving docs which have helped me along for so many years.  Incidentally, my first commit was too large to be sent out to the mailing list tracking the changes to the documentation. Oops! 

@@ -1,0 +1,194 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+@media (min-width: 38rem) {
+  html {
+    font-size: 18px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: -.025rem;
+}
+
+code,
+pre {
+  font-family: "Droid Sans Mono", Menlo, Monaco, "Courier New", monospace;
+}
+
+/*
+ * Logo bit
+ */
+header#logobit {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+header .container {
+  position: relative;
+}
+.logo {
+  position: absolute;
+  
+  top: 0;
+}
+.logo a:before {
+  -webkit-transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+     -moz-transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+       -o-transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+          transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+
+  -webkit-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+     -moz-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+       -o-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+          transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+
+  content: "";
+  background-image: url(../dude-web.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  left: -100px;
+  width: 80px;
+  height: 200px;
+  background-position: 0 100px;
+  overflow: hidden;
+  background-color: #3D9970;
+  border-bottom: 4px solid #1D7950;
+}
+
+#logobit.scroll .logo a:before {
+  height: 100px;
+  background-position: 0 0;
+  background-color: #f9f9f9;
+  border-bottom-width: 0;
+}
+.logo a:hover:before,
+#logobit.scroll .logo a:hover:before {
+  height: 180px;
+  background-position: 0px 80px;
+  background-color: #bf616a;
+  border-bottom: 4px solid #9f414a;
+}
+
+/*
+ * Container
+ *
+ * Center the page content.
+ */
+
+.container {
+  max-width: 22rem;
+}
+@media (min-width: 38rem) {
+  .container {
+    max-width: 32rem;
+  }
+}
+@media (min-width: 56rem) {
+  .container {
+    max-width: 38rem;
+  }
+}
+
+
+/*
+ * Masthead
+ *
+ * Super small header above the content for site name and short description.
+ */
+
+.masthead {
+  padding-top:    1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #eee;
+}
+.masthead-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #505050;
+}
+.masthead-title a {
+  color: #505050;
+}
+.masthead-title small {
+  font-size: 75%;
+  font-weight: 400;
+  color: #c0c0c0;
+  letter-spacing: 0;
+}
+.masthead-title small a {
+  color: #909090;
+}
+
+@media (max-width: 48rem) {
+  .masthead-title {
+    text-align: center;
+  }
+  .masthead-title small {
+    display: none;
+  }
+}
+
+.page,
+.post {
+  margin-bottom: 4em;
+}
+
+/* Post or page title */
+.page-title,
+.post-title,
+.post-title a {
+  color: #333;
+}
+.page-title,
+.post-title {
+  margin-top: 0;
+}
+
+.post-date {
+  display: block;
+  margin-top: -.15rem;
+  margin-bottom: 1rem;
+  color: #c0c0c0;
+}
+.page-date {
+  display: inline-block;
+  margin-top: .15rem;
+  float: right;
+  color: #c0c0c0;
+}
+
+.sidebar,
+.sidebar-toggle:active,
+#sidebar-checkbox:checked ~ .wrap .sidebar-toggle {
+  background-color: #3D9970;
+}
+.container.content a,
+.sidebar-toggle,
+.related-posts li a:hover {
+  color: #3D9970;
+}
+
+/*
+ * Footsie
+ */
+footer {
+  padding-top: 1rem;
+  margin-bottom: 4rem;
+  border-top: 1px solid #eee;
+  font-weight: 400;
+  color: #717171;
+  letter-spacing: 0;
+}

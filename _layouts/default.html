@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  {% include head.html %}
+
+  <body>
+
+    <header id="logobit">
+      <div class="container">
+        <div class="logo">
+          <a href="/" title="Go to Homepage"></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">{{ site.title }}</a>
+          <small>— Find me on
+            <a href="https://github.com/salathe">GitHub</a> and
+            <a href="http://stackoverflow.com/users/113938/salathe">StackOverflow</a>.
+          </small>
+        </h3>
+      </div>
+    </div>
+
+    <div class="container content">
+      {{ content }}
+    </div>
+
+    <script>
+    var $target = $('#logobit');
+    $('div.container.content').waypoint(function(direction) {
+      if (direction == 'up') {
+        $target.removeClass('scroll');
+      } else {
+        $target.addClass('scroll');
+      }
+    });
+    </script>
+
+  </body>
+</html>
