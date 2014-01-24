@@ -39,7 +39,7 @@ header .container {
 }
 .logo {
   position: absolute;
-  
+  left: -80px;
   top: 0;
 }
 .logo a:before {
@@ -58,7 +58,6 @@ header .container {
   background-repeat: no-repeat;
   display: inline-block;
   position: relative;
-  left: -100px;
   width: 80px;
   height: 200px;
   background-position: 0 100px;
