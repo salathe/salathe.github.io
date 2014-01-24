@@ -59,7 +59,7 @@ class Person
 {% endhighlight %}
 
 Now, we can create a new `Person` (see example below) and give them a name and
-age.  Using the `introduce` method, the person can them introduce themselves.
+age.  Using the `introduce()` method, the person can them introduce themselves.
 
 {% highlight php startinline %}
 // We'll be creating me, digitally.
@@ -82,7 +82,7 @@ need to add two lines of code to the basic class above to enable us to write a
 chain, and the second line is a repeat of the first!  How's it done?  Quite
 simply we need to return the `Person` object from each method.  At the moment,
 none of the methods actually return anything so we'll amend  that now.  We just
-need to add `return $this;` to the methods `setName` and `setAge`.
+need to add `return $this;` to the methods `setName()` and `setAge()`.
 
 The amended `Person` class is as follows:
 
@@ -132,7 +132,7 @@ $peter->setName('Peter')->setAge(23)->introduce();
 {% endhighlight %}
 
 That example will produce exactly the same output as our regular, boring example
-earlier! All because we return the `Person` object in the `setName/Age` methods.
+earlier! All because we return the `Person` object in the `setName/Age()` methods.
 
 ## How does that work?
 
@@ -145,13 +145,13 @@ Peter, my name and returns `$this` -- that is, the `$peter` object.
 So at the moment Peter has his name, but no age!
 
 Next up comes `->setAge(23)`.  Because we're chained with the previous method,
-PHP interprets the code and says "execute the `setAge` method belonging to
+PHP interprets the code and says "execute the `setAge()` method belonging to
 whatever was returned from the previous method."  In this case, PHP executes
 the `setAge` method belonging to our `Person` object, `$peter`.
 
-The exact same thing happens when we finally call the `introduce` method.
-PHP executes the `introduce` method belonging to whatever was returned from
-the `setAge` method call: `$peter`.
+The exact same thing happens when we finally call the `introduce()` method.
+PHP executes the `introduce()` method belonging to whatever was returned from
+the `setAge()` method call: `$peter`.
 
 Hopefully, that's at least a bit clear and I'll let you mull over this
 confusing (until you _get_ it) subject for a while.  I'll leave you with the
