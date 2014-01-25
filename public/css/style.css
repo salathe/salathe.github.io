@@ -82,7 +82,9 @@ header .container {
 }
 
 .logo a.tickle,
-.logo a.tickle:hover {
+.logo a.tickle:hover,
+#logobit.scroll .logo a.tickle,
+#logobit.scroll .logo a.tickle:hover {
   position: relative;
   left: -100px;
   height: 240px;
