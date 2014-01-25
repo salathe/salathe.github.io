@@ -8,7 +8,7 @@
     <header id="logobit">
       <div class="container">
         <div class="logo">
-          <a href="/" title="Go to Homepage"></a>
+          <a href="/" class="ticklez" title="Go to Homepage"></a>
         </div>
       </div>
     </header>
@@ -38,6 +38,32 @@
         $target.addClass('scroll');
       }
     });
+
+    (function($){
+      // Tickle module
+      var num_hovers = 10,
+          time_hovers = 10000,
+          $target = $('.logo a');
+      $target.data('hovers', []);
+      $target.hover(function(){
+        var hovers = $target.data('hovers');
+        hovers.push(new Date);
+        if (hovers.length > num_hovers) {
+          hovers.shift();
+        }
+        var interval = (new Date).getTime() - hovers[0].getTime();
+        if (hovers.length == num_hovers && interval <= time_hovers) {
+          $target.data('hovers', []);
+          $target.trigger('tickle');
+        }
+      }, function(){}).on('tickle', function(){
+        $target.addClass('tickle');
+        $target.one('mouseout', function(){
+          setTimeout(function(){ $target.removeClass('tickle'); }, 1000);
+        });
+      });
+    })(jQuery);
+    
 
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
