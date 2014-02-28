@@ -8,7 +8,7 @@ redcarpet:
 
 
 # Permalinks
-permalink:        /:year/:month/:day/:title/index.html
+permalink:        /:year/:month/:day/:title/
 
 title:            Cowburn
 
