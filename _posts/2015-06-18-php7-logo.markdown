@@ -1,0 +1,29 @@
+---
+layout: post
+title: PHP 7 logo downloads
+excerpt: A PHP 7 logo; collaboration between me and Vincent Pontier.
+---
+
+![PHP logo](/public/files/php7_preview.png "PHP logo")
+
+After Vincent Pontier's [logo proposal][proposal] on Twitter, I spent
+some days working on the logo in order to perfect some fine details and iron
+out the kinks.
+
+After finishing up, Vincent's response was, "Wow ;-) You're logo is AWESOME!
+Better than mine." (I'm not even paraphrasing.) and suggested making it
+available to all you lovely people.
+
+You probably don't need to be bored with any more details, so here we are;
+a PHP 7 logo by Peter Cowburn and Vincent Pontier.
+
+## Downloads
+
+ * [SVG][svg] – just the logo, 1.7 kB
+ * [PNG][png] – just the logo, 200x100, 3.2 kB
+ * [Fancy Illustrator version][illustrator] — as shown above, 1 MB
+
+ [proposal]: https://twitter.com/Elroubio/status/598826206503514112
+ [illustrator]: /public/files/php7_logo.ai
+ [svg]: /public/files/php7_logo.svg
+ [png]: /public/files/php7_logo.png
