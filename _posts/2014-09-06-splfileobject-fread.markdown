@@ -46,7 +46,7 @@ function hex_dump($bytes, $width) {
     $bytes_dump = str_pad($bytes_dump, $width);
 
     $hex_bytes = unpack('H*', $bytes)[1];
-    $hex_dump  = implode(' ', str_split($hex_bytes, 2))
+    $hex_dump  = implode(' ', str_split($hex_bytes, 2));
     $hex_dump  = str_pad($hex_dump, $width * 3);
 
     return "{$hex_dump} | {$bytes_dump}\n";
